@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>AFC East Players</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+
+  <form id="new-player-form" action="index.html" method="post">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="name">Player Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-item">
+        <label for="teams-list" class="Primary">Team</label>
+        <select id="teams" required>
+          <option value="New England Patriots">New England Patriots</option>
+          <option value="NY Jets">NY Jets</option>
+          <option value="Buffalo Bills">Buffalo Bils</option>
+          <option value="Miami Dolphins">Miami Dolphins</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="hall-of-fame">Hall of Fame Status</label>
+        <select id="halloffame" required>
+          <option value="Inducted">Inducted</option>
+          <option value="Not Inducted">Not Inducted</option>
+          <option value="Still Playing">Still Playing</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="save">
+  </form>
+
+  <button id="delete-all">Delete All</button>
+
+  <h1>Player List</h1>
+  <div id="player-list">
+
+  </div>
+
+</body>
+</html>
